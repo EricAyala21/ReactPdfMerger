@@ -7,20 +7,27 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const {acceptedFiles, getRootProps, getInputProps} = useDropzone();
   
-  const files = acceptedFiles.map(file => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-    </li>
-  ));
+  const {
+    acceptedFiles,
+    fileRejections,
+    getRootProps,
+    getInputProps
+
+  } = useDropzone({
+    accept:{
+      'file/pdf': ['.pdf']
+    }
+  });
+
+
 
   return (
     <div class = "middlegorund">
       <div class="foreground">
         <div {...getRootProps({className: 'dropzone'})}>
           <input {...getInputProps()}/>
-          <h1 class="dropText">drop or click here...</h1>
+          <h1 class="dropText">drop or click</h1>
 
 
             
