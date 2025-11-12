@@ -10,12 +10,12 @@ function App() {
     <div class = "middlegorund">
       <div class="foreground">
         <div class="file_drop_location">
-          <div class="buttons">
 
-            </div>
+            <button class="dropPoint">Choose your files..</button>
         </div>
-
       </div>
+      <h1>Merge File:</h1>
+      <button class="merge">merge</button>
     </div>
   )
 }
