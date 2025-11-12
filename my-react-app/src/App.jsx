@@ -1,17 +1,29 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import {useDropzone} from 'react-dropzone';
+
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const {acceptedFiles, getRootProps, getInputProps} = useDropzone();
+  
+  const files = acceptedFiles.map(file => (
+    <li key={file.path}>
+      {file.path} - {file.size} bytes
+    </li>
+  ));
 
   return (
     <div class = "middlegorund">
       <div class="foreground">
-        <div class="file_drop_location">
+        <div {...getRootProps({className: 'dropzone'})}>
+          <input {...getInputProps()}/>
+          <h1 class="dropText">drop or click here...</h1>
 
-            <button class="dropPoint">Choose your files..</button>
+
+            
         </div>
       </div>
       <h1>Merge File:</h1>

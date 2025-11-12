@@ -11,13 +11,37 @@
   background-color: aqua;
 }
 .foreground{
-  background-color:black;
+  background-color:#88845f;
   border-radius: 80px;
-  padding:80px;
+  border-width: 2px;
+  padding:7px;
+  border-style: solid;
+
 }
 .file_drop_location{
   border-style: dashed;
   border-width: 4px;
   border-radius:80px;
-  padding:220px;
+  padding:120px 30px 120px 30px;
+  border-color: #EADDCA;
+
+
+}
+.dropzone{
+  border-style: dashed;
+  border-radius: 80px;
+  padding:120px 60px 120px 60px;
+  border-width: 5px;
+  border-color: #EADDCA;
+
+}
+.dropzone:hover{
+  background-color:#7d7957 ;
+}
+.dropText{
+  font-family: "Cherry Bomb One",system-ui;
+  font-weight: 400;
+
+  font-size: 40px;
+  font-style: normal;
 }
