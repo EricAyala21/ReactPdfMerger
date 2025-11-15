@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import {useDropzone} from 'react-dropzone';
 
 import './App.css'
@@ -23,18 +22,22 @@ function App() {
 
 
   return (
-    <div class = "middlegorund">
-      <div class="foreground">
-        <div {...getRootProps({className: 'dropzone'})}>
-          <input {...getInputProps()}/>
-          <h1 class="dropText">drop or click</h1>
+    <div class = "background">
+              <div class="backDrop">PDF <br></br>
+      MERGER</div>
+      <div class="middleground">
+
+        <div class="foreground">
+          <div {...getRootProps({className: 'dropzone'})}>
+            <input {...getInputProps()}/>
+            <h1 class="dropText">drop or click</h1>
 
 
-            
+              
+          </div>
         </div>
       </div>
-      <h1>Merge File:</h1>
-      <button class="merge">merge</button>
+
     </div>
   )
 }
