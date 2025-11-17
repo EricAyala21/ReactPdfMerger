@@ -29,11 +29,13 @@ function App() {
         <div class="foreground">
           <div {...getRootProps({className: 'dropzone'})}>
             <input {...getInputProps()}/>
-            <h1 class="dropText">drop or click</h1>
-
+            <img class="file" src="file.png"></img>
 
               
           </div>
+        </div>
+        <div class="mergeSec">
+
         </div>
       </div>
 

@@ -5,10 +5,10 @@
   padding: 0;
 }
 
+
 /* LAYERS */
 .background,
-.middleground,
-.foreground {
+.middleground {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,11 @@
 }
 
 .background {
+  display: flex;
+  flex:1;
   z-index: 1;
+  justify-content: center;
+  align-items: center;
   background: teal;
   background-image: url("pdfMerge.svg");
   background-size: 100%;
@@ -25,35 +29,55 @@
 
 .middleground {
   z-index: 2;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+
   background: rgba(0,0,0,0.2);
 }
 
 .foreground {
   z-index: 3;
-  height:100%;
-  width:70%;
-  padding: 50px 0px 50px 0px;
+  flex:3;
+  align-items: center;
+
+  justify-content: center;
+  width:auto;
+  height:auto;
+  margin:0 auto;
+  padding:20em;
+
+}
+.mergeSec{
+  background-color: black;
+  width:auto;
+  height:auto;
+  padding:20em;
 }
 
 /* DROPZONE */
 .dropzone {
-  padding:100px;
-  justify-content: center;
-  border-style: dashed;
-  border-radius: 80px;
-  border-width: 5px;
-  border-color: #EADDCA;
-  background: #00CECB;
-  padding: 40px;
+  border-radius: 2em;
+  background: #00cecbd8;
+  padding:12em 7em 12em 7em;
 }
 
 .dropzone:hover {
-  background-color: #01b3b0;
+  background-color: #01b3b0cf;
 }
 
 /* DROP TEXT */
 .dropText {
-  font-family: "Cherry Bomb One", system-ui;
-  font-size: fill;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  color: #ffffea;
   font-style: normal;
+  padding-left: 6em;
+  font-size: 3.5em;
+}
+.file{
+  width:15%;
+  height:15%;
+  padding-left:24em;
+  
 }
