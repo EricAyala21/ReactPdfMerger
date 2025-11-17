@@ -19,6 +19,8 @@
 .background {
   z-index: 1;
   background: teal;
+  background-image: url("pdfMerge.svg");
+  background-size: 100%;
 }
 
 .middleground {
@@ -28,45 +30,30 @@
 
 .foreground {
   z-index: 3;
-  background: transparent;
-}
-
-/* WATERMARK TEXT */
-.backDrop {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 680px;
-  font: 100px;
-  font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-  font-weight: 900px;
-  font-style: normal;
-  line-height: 600px;
-  z-index: 2;
-  pointer-events: none;
-  user-select: none;
+  height:100%;
+  width:70%;
+  padding: 50px 0px 50px 0px;
 }
 
 /* DROPZONE */
 .dropzone {
+  padding:100px;
+  justify-content: center;
   border-style: dashed;
   border-radius: 80px;
   border-width: 5px;
   border-color: #EADDCA;
-  background: transparent;
+  background: #00CECB;
   padding: 40px;
 }
 
 .dropzone:hover {
-  background-color: #7d7957;
+  background-color: #01b3b0;
 }
 
 /* DROP TEXT */
 .dropText {
   font-family: "Cherry Bomb One", system-ui;
-  font-weight: 400;
-  font-size: 40px;
+  font-size: fill;
   font-style: normal;
 }

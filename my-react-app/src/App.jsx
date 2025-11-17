@@ -23,8 +23,7 @@ function App() {
 
   return (
     <div class = "background">
-              <div class="backDrop">PDF <br></br>
-      MERGER</div>
+
       <div class="middleground">
 
         <div class="foreground">
