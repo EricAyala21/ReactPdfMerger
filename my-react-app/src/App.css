@@ -1,69 +1,63 @@
+/* ROOT CONTAINER */
 #root {
   width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
+  position: relative;
+  overflow: auto;
 }
 
-
-/* LAYERS */
+/* LAYER BASE STYLES */
 .background,
-.middleground {
+.middleground,
+.foreground {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.background {
   display: flex;
-  flex:1;
-  z-index: 1;
   justify-content: center;
   align-items: center;
+}
+
+/* BACKGROUND */
+.background {
+  z-index: 1;
   background: teal;
   background-image: url("pdfMerge.svg");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.middleground {
-  z-index: 2;
-  flex: 2;
-  justify-content: center;
-  align-items: center;
 
-  background: rgba(0,0,0,0.2);
-}
-
+/* FOREGROUND */
 .foreground {
   z-index: 3;
-  flex:3;
-  align-items: center;
-
-  justify-content: center;
-  width:auto;
-  height:auto;
-  margin:0 auto;
-  padding:20em;
-
+  padding: 0;
 }
-.mergeSec{
-  background-color: black;
-  width:auto;
-  height:auto;
-  padding:20em;
-}
+
+
 
 /* DROPZONE */
 .dropzone {
-  border-radius: 2em;
+  width:60%;
+  height:35%;
+  border-radius: 1.5em;
   background: #00cecbd8;
-  padding:12em 7em 12em 7em;
+  padding: 4em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.2s ease;
 }
 
 .dropzone:hover {
   background-color: #01b3b0cf;
+  cursor: pointer;
 }
 
 /* DROP TEXT */
@@ -71,13 +65,12 @@
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
   color: #ffffea;
-  font-style: normal;
-  padding-left: 6em;
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
-.file{
-  width:15%;
-  height:15%;
-  padding-left:24em;
-  
+
+/* FILE ICON */
+.file {
+  width: 120px;
+  height: 120px;
+  margin-top: 1em;
 }

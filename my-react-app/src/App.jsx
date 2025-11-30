@@ -24,16 +24,13 @@ function App() {
   return (
     <div class = "background">
 
-      <div class="middleground">
+
 
         <div class="foreground">
           <div {...getRootProps({className: 'dropzone'})}>
             <input {...getInputProps()}/>
-            <img class="file" src="file.png"></img>
-
-              
           </div>
-        </div>
+
         <div class="mergeSec">
 
         </div>

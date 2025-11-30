@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #ff5e5b;
+        font-family: Arial-Black, 'Arial Black';
+        font-size: 523px;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        fill: #ffffea;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="1920" height="1080"/>
+  <text class="cls-2" transform="translate(114.27 403.56)"><tspan x="0" y="0" xml:space="preserve">  PDF</tspan><tspan x="0" y="571">ME</tspan><tspan class="cls-4" x="871.33" y="571">R</tspan><tspan class="cls-1" x="1268.68" y="571">G</tspan></text>
+</svg>
