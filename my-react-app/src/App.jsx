@@ -1,11 +1,9 @@
-import { useState } from 'react'
-
+import {download} from "./pdfMerge"
 import {useDropzone} from 'react-dropzone';
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   
   const {
     acceptedFiles,
@@ -32,8 +30,7 @@ function App() {
           </div>
 
         <div class="mergeSec">
-
-        </div>
+        <button onClick={() => download(acceptedFiles)}>download</button>        </div>
       </div>
 
     </div>
